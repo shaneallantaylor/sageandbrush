@@ -1,0 +1,40 @@
+body {
+  font-family: "Bree Serif",serif;
+  color: #333;
+  font-size: 15px;
+  line-height: 150%;
+  background: #f0f0f0;
+  overflow-y: scroll;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding-top: 16px;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.site-title {
+  text-align: -webkit-center;
+  text-align: center;
+  width: 310px;
+  height: 80px;
+}
+
+.top-bar {
+  color: #baaf50;
+  background: #4b4b4b;
+  height: 80px;
+}
+
+.content-container {
+  height: calc(100vh - 80px);
+  background-image: url("../img/bg/inspiration.jpg");
+}
