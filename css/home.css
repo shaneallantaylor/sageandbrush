@@ -8,6 +8,11 @@ body {
   font-weight: 300;
 }
 
+a {
+  color: #baaf50;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 36px;
   margin: 0;
@@ -32,9 +37,69 @@ h2 {
   color: #baaf50;
   background: #4b4b4b;
   height: 80px;
+  display: flex;
+}
+
+.nav-container {
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: -webkit-inline-box;
+  padding: 27px 0 0 0;
+  margin: 0;
+}
+
+.nav-container ul li {
+  padding-right: 40px;
+}
+
+.social-media {
+  padding-top: 25px;
 }
 
 .content-container {
+  position: relative;
   height: calc(100vh - 80px);
-  background-image: url("../img/bg/inspiration.jpg");
+  display: flex;
+  padding-right: 40px;
+  /*background-image: url("../img/bg/inspiration.jpg");*/
+}
+
+.content-container::after {
+  content: "";
+  background: url("../img/bg/winter_field.jpg");
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.sidebar-container {
+  position: relative;
+  min-width: 310px;
+}
+
+.sidebar-container img {
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.about-content {
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 110px;
+  padding-left: 10px;
+}
+
+.contact {
+  padding-top: 20px;
+  font-variant: normal;
 }
